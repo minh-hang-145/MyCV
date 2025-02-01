@@ -22,8 +22,11 @@ submit.addEventListener("click", function (event) {
 //phần thông tin nghề nghiệp
 const jobInformation = document.querySelectorAll(".job");
 const viewMore = document.querySelectorAll(".view-more");
+console.log(viewMore.length);
 const viewLess = document.querySelectorAll(".view-less");
+console.log(viewLess.length);
 const sectionContent = document.querySelectorAll(".section-content");
+console.log(sectionContent.length);
 function firstSetting() {
   for (let i = 0; i < jobInformation.length; i++) {
     const job = jobInformation[i];
@@ -37,18 +40,19 @@ function firstSetting() {
   }
 }
 firstSetting();
+
 for (let i = 0; i < sectionContent.length; i++) {
   const sectionContents = sectionContent[i];
-  const viewMores = viewMore[i];
-  const viewLesss = viewLess[i];
-  viewMores.addEventListener("click", function () {
+  const More = viewMore[i];
+  const Less = viewLess[i];
+  More.addEventListener("click", function () {
     sectionContents.classList.remove("hide");
-    viewLesss.classList.remove("hiden");
-    viewMores.classList.add("hide");
+    Less.classList.remove("hiden");
+    More.classList.add("hiden");
   });
-  viewLesss.addEventListener("click", function () {
-    sectionContents.classList.add("hide");
-    viewLesss.classList.add("hiden");
-    viewMores.classList.remove("hide");
+  Less.addEventListener("click", function () {
+    sectionContents.classList.add("hiden");
+    Less.classList.add("hiden");
+    More.classList.remove("hiden");
   });
 }
