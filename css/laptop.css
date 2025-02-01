@@ -282,6 +282,6 @@ footer a {
 .hiden {
   visibility: hidden;
 }
-.view-more .view-less {
+.view-more ,.view-less {
   text-align: left;
 }
