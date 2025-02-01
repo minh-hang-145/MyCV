@@ -1,0 +1,287 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+}
+
+/*bannner*/
+.banner-container {
+  text-align: center;
+  font-family: "Lato";
+  font-weight: 2em;
+  position: relative;
+  background-color: black;
+  font-size: 1em;
+  max-width: 100%;
+}
+.banner-container img {
+  height: 25em;
+  width: 100%;
+  object-fit: cover;
+  opacity: 0.5;
+  display: block;
+}
+.banner-text {
+  color: rgb(250, 250, 249);
+  width: 100%;
+  position: absolute;
+  top: 30%;
+  text-align: center;
+}
+
+/*navbar*/
+nav {
+  background-color: rgb(252, 249, 249);
+  max-width: 100%;
+  height: 4em;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  color: black;
+}
+.nav-text {
+  flex: 1;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 0.05em solid rgb(203, 192, 192);
+  text-transform: uppercase;
+  font-size: 0.9em;
+}
+.nav-text:hover {
+  background-color: rgb(208, 228, 228);
+  border-radius: 0.5em;
+}
+nav a {
+  text-decoration: none;
+  color: black;
+}
+.nav-text i {
+  color: rgb(105, 177, 208);
+}
+/*yêu cầu nâng cao- chèn ảnh ở giữa*/
+.nav-center {
+  position: relative;
+}
+.nav-center img {
+  border: 0.5em white solid;
+  border-radius: 50%;
+  height: 12em;
+  width: 12em;
+}
+
+/*phần thông tin cá nhân*/
+section {
+  max-width: 100%;
+}
+.column-2 {
+  order: 1;
+  background-color: rgb(233, 237, 240);
+}
+.column-1 {
+  order: 2;
+  text-align: left;
+  background-color: rgb(218, 223, 227);
+}
+.inf-title {
+  padding-bottom: 1em;
+}
+.inf-text span:first-child {
+  font-weight: bold;
+}
+.inf-text span:first-child::after {
+  content: " : ";
+}
+.inf-text span:nth-child(2) {
+  color: rgb(89, 90, 90);
+}
+.target-text {
+  color: rgb(89, 90, 90);
+}
+.inf-icon {
+  padding-top: 20px;
+  color: rgb(51, 134, 169);
+}
+/*thông tin nghề nghiệp*/
+.job-inf {
+  padding: 2em 0.7em;
+  max-width: 100%;
+}
+.section {
+  line-height: 2em;
+  color: rgb(89, 90, 90);
+}
+.content {
+  position: relative;
+}
+.content p b::before {
+  content: "";
+  width: 0.7em;
+  height: 0.7em;
+  background-color: rgb(36, 98, 180);
+  border: solid rgb(216, 213, 213) 0.15em;
+  position: absolute;
+  top: 0.5em;
+  left: -0.3em;
+  border-radius: 50%;
+}
+.section b {
+  padding-left: 0.5em;
+}
+/*kinh nghiệm, học vấn, hoạt động*/
+.date em {
+  background-color: rgb(51, 134, 169);
+  color: white;
+  font-weight: bold;
+  border: rgb(51, 134, 169) solid 0.1em;
+  border-radius: 0.5em;
+}
+.content b {
+  font-size: larger;
+}
+.section-title {
+  display: grid;
+  grid-template-columns: 75% 25%;
+}
+.section-title i {
+  font-size: 2.5em;
+}
+/*sở thích, ngôn ngữ, kỹ năng*/
+.hobby {
+  order: 6;
+}
+.language {
+  order: 5;
+}
+.skill {
+  order: 4;
+}
+.hobby ul {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 2em;
+  text-align: center;
+  list-style: none;
+  gap: 0.5em;
+  padding-left: 0;
+}
+.hobby-icon i {
+  padding: 1em;
+  color: rgb(37, 139, 139);
+  font-size: larger;
+  border: solid 0.1em rgb(46, 126, 153);
+  border-radius: 50%;
+}
+
+.level span {
+  display: inline-block;
+  height: 0.3em;
+  width: 2.8em;
+  background-color: rgb(37, 139, 139);
+  border: solid 0.1em rgb(37, 139, 139);
+  border-radius: 0.2em;
+  margin-right: 0.5em;
+}
+.level .no-fill {
+  background-color: rgb(162, 161, 161);
+  border: rgb(162, 161, 161);
+}
+/*phần chứng chỉ*/
+.certificate {
+  width: 100%;
+  padding: 0 3em;
+  border: none;
+}
+.cer-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 1em 0;
+  border: none;
+  gap: 1.5em;
+  padding-left: 0.2em;
+}
+.cer-content p {
+  margin-bottom: 0;
+}
+.cer-content-left {
+  border-right: #d6c08d 0.1em solid;
+}
+/*Dự án*/
+.project {
+  width: 100%;
+  border: none;
+  padding: 3em;
+}
+
+table td:first-child {
+  width: 30%;
+  font-weight: bold;
+}
+.project-n {
+  border: solid 0.1em rgb(162, 160, 160);
+}
+td {
+  border-top: solid 0.07em rgb(162, 160, 160);
+  vertical-align: top;
+}
+.project-title {
+  border-bottom: solid 0.07em rgb(162, 160, 160);
+  text-transform: uppercase;
+  margin: 0.5em 0;
+  padding: 0.5em 0;
+}
+.project-nav span {
+  padding: 0 1em;
+}
+.nav-card {
+  display: flex;
+  justify-content: space-around;
+  align-items: start;
+}
+.project-nav {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  text-align: center;
+  border-bottom: solid 0.07em rgb(162, 160, 160);
+}
+.project-nav p:first-child {
+  margin-left: 0.5em;
+  background-color: rgb(51, 134, 169);
+  border: rgb(51, 134, 169) solid 0.1em;
+  border-radius: 0.5em;
+  color: white;
+  height: fit-content;
+  margin-right: 1em;
+}
+
+/*điều chỉnh phần dự án */
+
+/*footer*/
+.facebook,
+.linkedin,
+.github {
+  display: inline-block;
+  color: rgb(51, 134, 169);
+  padding: 3em;
+  width: 30%;
+}
+footer i {
+  font-size: 2em;
+}
+footer a {
+  color: rgb(89, 90, 90);
+  text-decoration: none;
+}
+/*phục vụ cho JS*/
+.hide {
+  display: none;
+}
+.hiden {
+  visibility: hidden;
+}
+.view-more .view-less {
+  text-align: left;
+}

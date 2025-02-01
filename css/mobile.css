@@ -1,0 +1,47 @@
+@media (max-width: 767px) {
+  /*định dạng responsive cho thanh nav*/
+  nav {
+    display: block;
+    height: 100%;
+  }
+  .nav-text {
+    display: block;
+    text-align: left;
+    height: 3em;
+    padding-top: 0.5em;
+  }
+  .nav-text i,
+  a {
+    padding: 0.5em 0.5em;
+    margin-top: 0.5em;
+  }
+  .nav-text i {
+    padding-left: 2em;
+  }
+  .hidden {
+    display: none;
+  }
+  /*điều chỉnh phần thông tin cá nhân*/
+  .column-1 {
+    margin-top: 1.5em;
+  }
+  /*responsive cho các cột bằng bootstrap*/
+  /*điều chỉnh xuống hàng cho chữ và ảnh, điều chỉnh border cho phần chứng chỉ*/
+  .cer-content {
+    display: flex;
+    flex-direction: column;
+    border-right: none;
+    border-bottom: #d6c08d 0.1em solid;
+  }
+  /**/
+  /*phục vụ cho JS*/
+  .hide {
+    display: none;
+  }
+  .hiden {
+    visibility: hidden;
+  }
+  .view-more .view-less {
+    text-align: left;
+  }
+}
