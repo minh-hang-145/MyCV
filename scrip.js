@@ -51,7 +51,7 @@ for (let i = 0; i < sectionContent.length; i++) {
     More.classList.add("hiden");
   });
   Less.addEventListener("click", function () {
-    sectionContents.classList.add("hiden");
+    sectionContents.classList.add("hide");
     Less.classList.add("hiden");
     More.classList.remove("hiden");
   });
