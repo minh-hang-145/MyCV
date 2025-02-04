@@ -35,26 +35,29 @@
     <!--navbar-->
     <nav>
       <div class="nav-text">
-        <i class="icon-user"></i><a href="#">Thông tin</a>
+        <i class="icon-user"></i><a href="#information">Thông tin</a>
       </div>
       <div class="nav-text">
-        <i class="icon-doc-text-inv"></i><a href="#">Lý lịch</a>
+        <i class="icon-doc-text-inv"></i><a href="#job">Lý lịch</a>
       </div>
       <div class="nav-text nav-center hidden">
         <img src="images/my photo.jpg" alt="myphoto" />
       </div>
       <div class="nav-text">
-        <i class="icon-mail-alt"></i><a href="#">Chứng chỉ</a>
+        <i class="icon-mail-alt"></i><a href="#certificate">Chứng chỉ</a>
       </div>
       <div class="nav-text">
-        <i class="icon-star-1"></i><a href="#">Dự án</a>
+        <i class="icon-star-1"></i><a href="#project">Dự án</a>
       </div>
     </nav>
     <section>
       <!--Thông tin cá nhân-->
       <div class="my-info row p-2 m-2">
         <!--phần yêu cầu để hiện thông tin cá nhân-->
-        <div class="form-container column-1 col-sm-12 col-md-6 p-5">
+        <div
+          class="form-container column-1 col-sm-12 col-md-6 p-5"
+          id="information"
+        >
           <h2 class="inf-title">Thông tin cá nhân</h2>
           <form class="email-inform" autocomplete="on">
             <label for="Email-inform"></label>
@@ -122,7 +125,7 @@
     </section>
     <section>
       <!--Thông tin nghề nghiệp-->
-      <div class="container job-inf">
+      <div class="container job-inf" id="job">
         <div class="row g-2">
           <div class="job col-12 col-md-6 col-lg-4">
             <div class="p-3 border bg-light">
@@ -294,7 +297,7 @@
     </section>
     <!--Chứng chỉ-->
     <section>
-      <div class="section certificate">
+      <div class="section certificate" id="certificate">
         <h2>Chứng nhận - Giải thưởng</h2>
         <div class="row">
           <div class="section cer-content cer-content-left col-sm-12 col-md-6">
@@ -316,7 +319,7 @@
     </section>
     <!--Dự án-->
     <section>
-      <div class="section project">
+      <div class="section project" id="project">
         <h2 class="section-title">Dự án</h2>
         <div class="project-imfor row p-3">
           <div class="col-12 col-md-4 p-2">
