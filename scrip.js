@@ -49,15 +49,12 @@ for (let i = 0; i < sectionContent.length; i++) {
   More.addEventListener("click", function () {
     sectionContents.classList.remove("hide");
     Less.classList.remove("hiden");
-    More.classList.add("hiden");
-    job.addEventListener("mouseenter", function () {
-      More.classList.add("hiden");
-    });
+    More.classList.add("hide");
   });
   Less.addEventListener("click", function () {
     sectionContents.classList.add("hide");
     Less.classList.add("hiden");
-    More.classList.remove("hiden");
+    More.classList.remove("hide");
     firstSetting();
   });
 }
